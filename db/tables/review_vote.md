@@ -10,3 +10,5 @@
 |レビューid|review_id|UUID|NN||PK|
 |ユーザーid|user_id|UUID|NN||PK<br> FK(user.id)|
 |票スコア|score|INT|NN|||
+|作成日|created_at|TIMESTAMP|NN|||
+|最終更新日|updated_at|TIMESTAMP|NN||

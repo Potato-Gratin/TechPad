@@ -10,3 +10,5 @@
 |バッジid|id|UUID|NN||PK|
 |レビューid|review_id|UUID|NN||PK<br> FK(review.id)|
 |ユーザーid|user_id|UUID|NN||FK(user.id)|
+|作成日|created_at|TIMESTAMP|NN|||
+|最終更新日|updated_at|TIMESTAMP|NN||

@@ -10,7 +10,7 @@
 |レビューid|id|UUID|NN||PK|
 |記事id|article_id|UUID|NN||PK<br>FK(article.id)|
 |本文|content|TEXT|NN||CHECK(10,000文字以下)|
-|投稿日|created_at|DATE|NN|||
-|最終更新日|updated_at|DATE|NN|||
+|作成日|created_at|TIMESTAMP|NN|||
+|最終更新日|updated_at|TIMESTAMP|NN||
 |ユーザーid|user_id|UUID|NN||FK(user.id)|
 |親レビューid|parent_review_id|UUID|NN||FK(review.id)|
