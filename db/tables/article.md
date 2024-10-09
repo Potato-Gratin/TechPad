@@ -14,5 +14,5 @@
 |公開日|published_at|DATE||||
 |最終更新日|updated_at|DATE|NN||
 |公開フラグ|is_public|boolean|NN|false||
-|閲覧数|view_count|count|NN|0||
+|閲覧数|view_count|INT|NN|0||
 |投稿者id|user_id|UUID|NN||FK(user.id)|

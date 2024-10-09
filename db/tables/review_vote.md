@@ -2,11 +2,11 @@
 |:-|:-|---|
 |**論理エンティティ名**|レビュー票|
 |**物理エンティティ名**|review_vote|
-|**概要**|記事の情報をまとめたテーブル|
+|**概要**|レビュワーがレビューに対して送る評価。|
 |||
 
 |論理名|物理名|データ型|Not null|デフォルト|備考|
 |---|---|---|---|---|---|
-|レビューid|review_id|UUID|NN|auto_increment|PK|
-|ユーザーid|user_id|UUID|NN||PK FK|
-|票スコア|score|count|NN||PK FK|
+|レビューid|review_id|UUID|NN||PK|
+|ユーザーid|user_id|UUID|NN||PK<br> FK(user.id)|
+|票スコア|score|INT|NN|||
