@@ -39,6 +39,7 @@ classDiagram
   - PK FK article_id
   - content
   - created_at
+  - published_at
   - updated_at
   - FK user_id
   - FK parent_review_id
