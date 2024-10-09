@@ -7,6 +7,6 @@
 
 |論理名|物理名|データ型|Not null|デフォルト|備考|
 |---|---|---|---|---|---|
-|ユーザID|user_id|UUID|NN|auto_increment|PK　FK|
+|ユーザーid|user_id|UUID|NN|auto_increment|PK　FK|
 |記事id|article_id|UUID|NN||PK　FK|
 
