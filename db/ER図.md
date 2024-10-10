@@ -56,4 +56,14 @@ classDiagram
   - PK FK review_id
   - FK user_id 
   }
+
+  class badge_text {
+  - PK id
+  - context
+  }
+
+  class badge_flame {
+  - PK id
+  - price
+  }
 ```
