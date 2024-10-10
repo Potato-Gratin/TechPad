@@ -10,6 +10,9 @@ classDiagram
   review --> review
   user --> badge
   review --> badge
+  badge_text --> badge
+  badge_flame --> badge
+
 
   class user{
     - PK id
