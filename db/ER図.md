@@ -57,8 +57,8 @@ classDiagram
 
   class badge{
   - PK id
-  - PK FK review_id
-  - PK FK article_id
+  - FK review_id
+  - FK article_id
   - FK user_id
   }
 
