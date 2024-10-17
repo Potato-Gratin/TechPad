@@ -50,6 +50,7 @@ classDiagram
 
   class review_vote{
   - PK FK review_id
+  - PK FK article_id
   - PK FK user_id
   - score
   }
@@ -57,7 +58,8 @@ classDiagram
   class badge{
   - PK id
   - PK FK review_id
-  - FK user_id 
+  - PK FK article_id
+  - FK user_id
   }
 
   class badge_text {
