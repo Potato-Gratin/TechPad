@@ -11,5 +11,5 @@
 |表示id|display_id|TEXT|NN||UNIQUE<br>CHECK(1文字以上、15文字以下)|
 |ユーザー名|name|TEXT|NN||CHECK(1文字以上、15文字以下)|
 |説明|description|TEXT|||CHECK(400文字以下)|
-|作成日|created_at|TIMESTAMP|NN|||
-|最終更新日|updated_at|TIMESTAMP|NN||
+|作成日|created_at|TIMSTAMPZ|NN|||
+|最終更新日|updated_at|TIMSTAMPZ|NN||

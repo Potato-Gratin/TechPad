@@ -11,5 +11,5 @@
 |レビューid|review_id|serial|NN||FK(review.id)|
 |記事id|article_id|UUID|NN||FK(review.article_id)|
 |ユーザーid|user_id|UUID|NN||FK(user.id)|
-|作成日|created_at|TIMESTAMP|NN|||
-|最終更新日|updated_at|TIMESTAMP|NN||
+|作成日|created_at|TIMSTAMPZ|NN|||
+|最終更新日|updated_at|TIMSTAMPZ|NN||
