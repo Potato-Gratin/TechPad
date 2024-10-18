@@ -7,7 +7,7 @@
 
 |論理名|物理名|データ型|Not null|デフォルト|備考|
 |---|---|---|---|---|---|
-|レビューid|id|serial|NN||PK|
+|レビューid|id|UUID|NN||PK|
 |記事id|article_id|UUID|NN||PK<br>FK(article.id)|
 |本文|content|TEXT|NN||CHECK(10,000文字以下)|
 |作成日|created_at|TIMESTAMPZ|NN|||
