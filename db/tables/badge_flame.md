@@ -7,5 +7,5 @@
 
 |論理名|物理名|データ型|Not null|デフォルト|備考|
 |---|---|---|---|---|---|
-|バッジフレームid|badge_flame_id|UUID|NN||PK|
+|バッジフレームid|id|serial|NN||PK|
 |値段|price|int|NN|||

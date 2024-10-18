@@ -7,5 +7,5 @@
 
 |論理名|物理名|データ型|Not null|デフォルト|備考|
 |---|---|---|---|---|---|
-|バッジテキストid|badge_id|UUID|NN||PK|
+|バッジテキストid|id|serial|NN||PK|
 |内容|context|text|NN|||
