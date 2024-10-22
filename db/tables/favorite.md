@@ -11,4 +11,3 @@
 |記事id|article_id|UUID|NN||PK<br>FK(article.id)|
 |作成日|created_at|TIMESTAMPZ|NN|||
 |最終更新日|updated_at|TIMESTAMPZ|NN||
-
