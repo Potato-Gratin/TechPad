@@ -38,4 +38,4 @@
 |GET /badge_texts/:budgeTextId|バッジテキスト取得|バッジテキストが存在しない場合、404 Not Found を返す|
 |**badge_flame**||||
 |GET /badge_flames|バッジフレーム一覧取得|||
-|GET /badge_flames/:badgeFlameId|バッジフレーム一覧取得||バッジフレームが存在しない場合、400 Not Found を返す|
+|GET /badge_flames/:badgeFlameId|バッジフレーム一覧取得||バッジフレームが存在しない場合、404 Not Found を返す|
