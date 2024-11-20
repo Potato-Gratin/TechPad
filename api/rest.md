@@ -13,7 +13,7 @@
 |POST /articles|記事追加|記事データを挿入する||
 |GET /articles/search|記事検索|検索文字列とページ数に応じた記事情報を返す|クエリパラメータにq（検索文字列）が必須、page（ページ数）が任意で付与できる（ない場合のデフォルト値は1）。1ページにつき30件を取得する。パラメータがない場合は 400 Bad Request を返す。検索は記事名との部分一致で行う。|
 |GET /articles/:id|記事情報取得|記事情報を取得する|IDが存在しない場合、404 Not Found を返す|
-|GET /users/:displayId/articles|ユーザー記事情報取得|ユーザーのプロフィールに書いた記事を一覧表示する|ユーザーIDが存在しない場合、404 Not Found を返す|
+|GET /articles/users/:displayId|ユーザー記事情報取得|ユーザーのプロフィールに書いた記事を一覧表示する|ユーザーIDが存在しない場合、404 Not Found を返す|
 |PATCH /articles/:id|記事情報更新|IDに対する記事の情報を更新する|IDが存在しない場合は 404 Not Found、更新データに不備がある場合は 400 Bad Request を返す。|
 |DELETE /articles/:id|記事削除|IDに対する記事を削除する|削除データが存在しない場合は 400 Bad Request を返す|
 |**favorite**||||
