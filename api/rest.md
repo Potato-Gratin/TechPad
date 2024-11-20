@@ -21,19 +21,19 @@
 |POST /articles/:id/favorites|いいね追加|指定した記事に対していいねを送信する|記事IDが存在しない場合、404 Not Found を返す|
 |DELETE /articles/:id/favorites|いいね削除|指定した記事に送っていたいいねを取り消す|削除するいいねが存在しない場合、404 Not Found を返す|
 |**review**||||
-|GET /articles/:articlesId/reviews|記事ごとのレビュー情報取得||クエリパラメータにpage（ページ数）が付与できる（付与しない場合のデフォルト値は1）。1ページ当たり10件を取得する。|
-|POST /articles/:articleId/reviews|レビュー追加|レビューを投稿する|記事IDが存在しない場合、404 Not Found を返す|
-|GET /users/:displayId/reviews|ユーザーごとのレビュー情報取得|ユーザーが投稿したレビューの一覧を取得する。|ユーザーが存在しない場合は 404 Not Found を返す|
-|DELETE /articles/:articleId/reviews/:reviewId|レビュー削除||記事ID、レビューが存在しない場合、404 Not Found を返す|
+|GET /reviews/articles/:articlesId|記事ごとのレビュー情報取得||クエリパラメータにpage（ページ数）が付与できる（付与しない場合のデフォルト値は1）。1ページ当たり10件を取得する。|
+|POST /reviews/articles/:articleId|レビュー追加|レビューを投稿する|記事IDが存在しない場合、404 Not Found を返す|
+|GET /reviews/users/:displayId|ユーザーごとのレビュー情報取得|ユーザーが投稿したレビューの一覧を取得する。|ユーザーが存在しない場合は 404 Not Found を返す|
+|DELETE /reviews/:reviewId/articles/:articleId|レビュー削除||記事ID、レビューが存在しない場合、404 Not Found を返す|
 |**review_vote**||||
-|GET /articles/:articleId/reviews/:reviewId/review_votes/score|レビュースコア取得|レビューについているスコアの総計を取得する|記事、レビューが存在しない場合、404 Not Found を返す|
-|PUT /articles/:articleId/reviews/:reviewId/review_votes|レビュー票追加・更新|指定したレビューに対してレビュー票を送信する。既に存在していた場合、置き換える|記事、レビューが存在しない場合、404 Not Found を返す|
-|DELETE /articles/:id/reviews/:reviewId/users/:userId/review_votes|レビュー票削除|指定したレビューに送っていたレビュー票を取り消す|取り消すレビュー票が存在しない場合、404 Not Found を返す|
+|GET /review_votes/score/articles/:articleId/reviews/:reviewId|レビュースコア取得|レビューについているスコアの総計を取得する|記事、レビューが存在しない場合、404 Not Found を返す|
+|PUT /review_votes/articles/:articleId/reviews/:reviewId|レビュー票追加・更新|指定したレビューに対してレビュー票を送信する。既に存在していた場合、置き換える|記事、レビューが存在しない場合、404 Not Found を返す|
+|DELETE /articles/:id/reviews/:reviewId/users/:userId|レビュー票削除|指定したレビューに送っていたレビュー票を取り消す|取り消すレビュー票が存在しない場合、404 Not Found を返す|
 |**badge**||||
-|POST /articles/:articleId/reviews/:reviewId/budges|バッジ追加|記事、レビューが存在しない場合、404 Not Found を返す|
-|GET /articles/:articleId/reviews/:reviewId/budges|レビューごとのバッジ情報取得|記事、レビューが存在しない場合、404 Not Found を返す|
-|GET /users/:displayId/budges/receive|自分が受け取ったバッジ一覧取得|ユーザーが存在しない場合、404 Not Found を返す|
-|GET /users/:displayId/budges/send|自分が贈ったバッジ一覧取得|ユーザーが存在しない場合、404 Not Found を返す|
+|POST /budges/articles/:articleId/reviews/:reviewId|バッジ追加|記事、レビューが存在しない場合、404 Not Found を返す|
+|GET /budges/articles/:articleId/reviews/:reviewId|レビューごとのバッジ情報取得|記事、レビューが存在しない場合、404 Not Found を返す|
+|GET /budges/receive/users/:displayId|自分が受け取ったバッジ一覧取得|ユーザーが存在しない場合、404 Not Found を返す|
+|GET /budges/send/users/:displayId|自分が贈ったバッジ一覧取得|ユーザーが存在しない場合、404 Not Found を返す|
 |**badge_text**||||
 |GET /badge_texts|バッジテキスト一覧取得|||
 |GET /badge_texts/:budgeTextId|バッジテキスト取得|バッジテキストが存在しない場合、404 Not Found を返す|
